@@ -1,3 +1,8 @@
+body {
+	overflow-x : no-scroll;
+	width: device-width;
+}
+
 .carousel {
 	position: relative;
 	&.pointer-event {

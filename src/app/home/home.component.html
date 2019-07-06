@@ -1,40 +1,88 @@
 <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
   <mdb-carousel-item>
-    <a routerLink="/"><img class="d-block w-100" style="height: 400px;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide"></a>
+    <a routerLink="/"><img class="d-block w-100" style="height: 300px;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide"></a>
   </mdb-carousel-item>
   <mdb-carousel-item>
-     <a routerLink="/"><img class="d-block w-100" style="height: 400px;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide"></a>
+     <a routerLink="/"><img class="d-block w-100" style="height: 300px;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide"></a>
   </mdb-carousel-item>
   <mdb-carousel-item>
-     <a routerLink="/"><img class="d-block w-100" style="height: 400px;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide"></a>
+     <a routerLink="/"><img class="d-block w-100" style="height: 300px;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide"></a>
   </mdb-carousel-item>
 </mdb-carousel>
-<div class="section">
+
+ <div class="section align-items-center">
 <!-- Material column sizing form -->
-<div class="col-lg-6 text-center ">
+<div class="col-lg-8 align-items-center offset-4">
 <form >
   <!-- Grid row -->
   <div class="form-row">
     <!-- Grid column -->
-    <div class="md-form md-outline">
-  <input mdbInput mdbValidate name="email" type="email" id="form8" class="form-control" [(ngModel)]="email" #input="ngModel" required pattern="[^ @]*@[^ @]*">
-  <label for="form2">Email validator</label>
+  <div class="col-lg-4 md-form md-outline">
+  <input mdbInput mdbValidate name="email" type="tel" id="form8" class="form-control" [(ngModel)]="email" #input="ngModel" required pattern="[^ @]*@[^ @]*">
+  <label for="form2">Mobile </label>
   <mdb-error *ngIf="input.invalid && (input.dirty || input.touched)">Input invalid</mdb-error>
   <mdb-success *ngIf="input.valid && (input.dirty || input.touched)">Input valid</mdb-success>
 </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
     <div class="col-lg-2">
       <!-- Material input -->
       <div class="md-form">
-        <input mdbInput type="submit" class="form-control btn blue" value="Pay bill" >
+        <input mdbInput type="submit" class="form-control btn purple-gradient text-white" value="Pay bill" >
       </div>
     </div>
   </div>
-    <!-- Grid column -->
-  <!-- Grid row -->
 </form>
 </div> 
 <!-- Material column sizing form -->
+</div>
+<div class="section">
+  <div class="row">
+    <div class="col-lg-2 offset-1">
+      <mdb-card class="mb-4 text-center text-white" borderColor="border-info" style="height:30px;" style="max-width: 20rem">
+      <mdb-card-header class="bg-info"> <a routerLink="/" > Recharge </a></mdb-card-header>
+          <mdb-card-body class="text-center offset-2">
+          <mdb-card-text> <mdb-icon fas icon="mobile-alt" size="3x" class="cyan-text pr-3" aria-hidden="true"></mdb-icon>
+          </mdb-card-text>
+      </mdb-card-body>
+    </mdb-card>
+    </div>
+    <div class="col-lg-2">
+       <mdb-card class="mb-4 text-center text-white" borderColor="border-info" style="height:30px;" style="max-width: 20rem">
+      <mdb-card-header class="bg-info"> <a routerLink="/" > Prepaid connection </a></mdb-card-header>
+          <mdb-card-body class="text-center offset-2">
+          <mdb-card-text> <mdb-icon fas icon="sim-card" size="3x" class="cyan-text pr-3" aria-hidden="true"></mdb-icon>
+          </mdb-card-text>
+      </mdb-card-body>
+    </mdb-card>
+    </div>
+
+    <div class="col-lg-2">
+       <mdb-card class="mb-4 text-center text-white" borderColor="border-info" style="height:30px;" style="max-width: 20rem">
+      <mdb-card-header class="bg-info"> <a routerLink="/" > Postpaid connection </a></mdb-card-header>
+          <mdb-card-body class="text-center offset-2">
+          <mdb-card-text> <mdb-icon fas icon="sim-card" size="3x" class="cyan-text pr-3" aria-hidden="true"></mdb-icon>
+          </mdb-card-text>
+      </mdb-card-body>
+    </mdb-card>
+    </div>
+
+    <div class="col-lg-2">
+       <mdb-card class="mb-4 text-center text-white" borderColor="border-info" style="height:30px;" style="max-width: 20rem">
+      <mdb-card-header class="bg-info"> <a routerLink="/" > Home Broadband </a></mdb-card-header>
+          <mdb-card-body class="text-center offset-2">
+          <mdb-card-text> <mdb-icon fas icon="wifi" size="3x" class="cyan-text pr-3" aria-hidden="true"></mdb-icon>
+          </mdb-card-text>
+      </mdb-card-body>
+    </mdb-card>
+    </div>
+
+    <div class="col-lg-2">
+       <mdb-card class="mb-4 text-center text-white" borderColor="border-info" style="height:30px;" style="max-width: 20rem">
+      <mdb-card-header class="bg-info"> <a routerLink="/" > Pay bill </a></mdb-card-header>
+          <mdb-card-body class="text-center offset-2">
+          <mdb-card-text> <mdb-icon fas icon="credit-card" size="3x" class="cyan-text pr-3" aria-hidden="true"></mdb-icon>
+          </mdb-card-text>
+      </mdb-card-body>
+    </mdb-card>
+    </div>
+  </div>
 </div>
