@@ -14,7 +14,7 @@
 <form >
   <div class="form-row">
   <div class="col-lg-6 md-form md-outline">
-  <input mdbInput mdbValidate name="email" type="tel" id="form8" class="form-control" [(ngModel)]="email" #input="ngModel" required pattern="[^ @]*@[^ @]*">
+  <input mdbInput mdbValidate name="email" type="tel" id="form8" class="form-control" [(ngModel)]="email" #input="ngModel" required pattern="[6789][0-9]{9}">
   <label for="form2">Mobile </label>
   <mdb-error *ngIf="input.invalid && (input.dirty || input.touched)">Input invalid</mdb-error>
   <mdb-success *ngIf="input.valid && (input.dirty || input.touched)">Input valid</mdb-success>
