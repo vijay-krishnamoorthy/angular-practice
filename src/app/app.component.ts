@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor(private router: Router) {
+  	
+  }
+  fn() {
+    var s=this.router.url.toString().split("/");
+    if(s[1]=="")
+    return true;
+    else 
+    return false;
+  }
 }

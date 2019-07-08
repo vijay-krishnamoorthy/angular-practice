@@ -1,12 +1,6 @@
 <app-navigation></app-navigation>
-<app-home></app-home>
-<app-prepaid></app-prepaid>
-<app-postpaid></app-postpaid>
-<app-broadband></app-broadband>
-<app-login></app-login>
-<app-signup></app-signup>
-<app-shop></app-shop>
-<app-recharge></app-recharge>
-<app-dashboard></app-dashboard>
-<app-customersupport></app-customersupport>
+<div *ngIf="fn()" >
+      <app-home></app-home>
+  </div>
+<router-outlet></router-outlet> 
 <app-footer></app-footer>
