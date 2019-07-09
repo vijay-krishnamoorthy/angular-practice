@@ -50,6 +50,9 @@
               },
               {
                 "input": "src/styles.scss"
+              },
+              {
+                "input": "src/assets/css/new.scss"
               }
             ],
             "scripts": [
@@ -58,6 +61,9 @@
               },
               {
                 "input": "node_modules/hammerjs/hammer.min.js"
+              },
+              {
+                "input": "src/assets/js/compiled.min.js"
               }
             ]
           },

@@ -21,18 +21,18 @@
       <!--Grid row-->
       <form>
 			  <div class="form-row text-white text-center">
-			    <div class="col-5 offset-2">
+			    <div class="col-4 offset-2">
 
 			    	<div class="md-form md-bg form-lg">
-					  <input mdbValidate name="mobile" type="tel" id="form-bg-lg" class="form-control form-control-lg" type="text" mdbInput [(ngModel)]="mobile" #input="ngModel" required pattern="[^ @]*@[^ @]*">
+					  <input mdbValidate name="mobile" type="tel" id="form-bg-lg" class="form-control form-control-lg" type="text" mdbInput [(ngModel)]="mobile" #input="ngModel" required pattern="[6789][0-9]{9}">
 					  <label for="form-bg-lg">Mobile</label>
 					  <mdb-error *ngIf="input.invalid && (input.dirty || input.touched)">Input invalid</mdb-error>
-					<mdb-success *ngIf="input.valid && (input.dirty || input.touched)">Input valid</mdb-success>
+					<mdb-success *ngIf="input.valid && (input.dirty || input.touched)"> </mdb-success>
 					</div>
 			    </div>
-			    <div class="col-2">
+			    <div class="col-3">
 			      <div class="md-form form-lg">
-			        <input mdbInput type="submit" class="form-control form-control-bg btn btn-md btn-lg blue-gradient mt-2" value="Submit">
+			        <input mdbInput mdbBtn type="submit" size="lg" rounded="true" gradient="blue" class="form-control form-control-lg text-white mt-0" value="Submit">
 			      </div>
 			    </div>
 			  </div>
